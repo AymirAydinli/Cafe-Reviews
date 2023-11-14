@@ -6,4 +6,4 @@
 - Receiving Form Data with WTForms
 - Using Flask-Bootstrap as an Inherited Template
 
-![day62](https://user-images.githubusercontent.com/98851253/161461262-b6962031-b23d-4bdf-8afa-e30a2892f387.gif)
+[screen-capture (1).webm](https://github.com/AymirAydinli/Cafe-Reviews/assets/22778361/cbc2c321-2653-42e8-b2f0-471f66d44261)
