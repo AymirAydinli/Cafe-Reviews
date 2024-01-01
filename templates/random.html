@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Restaurants{% endblock %}
+{% block title %}Random Cafe{% endblock %}
 
 {% block content %}
 
@@ -7,13 +7,9 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <h1>All Cafes</h1>
+      <h1>Random Cafe</h1>
 
 	  <table class="table table-dark table-striped table-hover">
-          <!-- This is where you will write the code to render a Bootstrap 
-          Table that contains all the information from the 
-          cafe-data.csv file. -->
-          {% for cafe in cafes %}
             <tr>
               <td>{{cafe.name}}</td>
               <td><a href="{{cafe.map_url}}">Maps Link</a></td>
@@ -27,12 +23,7 @@
               <td>{{cafe.coffee_price}}</td>
               <td><a href="{{url_for('update', id=cafe.id)}}">Update</a></td>
               <td><a href="{{url_for('delete', id=cafe.id)}}">Delete</a></td>
-
-
             </tr>
-          {% endfor %}
-
-
   	  </table>
 
       <p><a href="{{url_for('home')}}">Return to index page</a></p>
